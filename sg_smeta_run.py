@@ -15,47 +15,6 @@ DB_FILE_SHEET_DEFAULT = "Default settings"
 
 default = fc.FromXLS(DB_FILE, DB_FILE_SHEET_DEFAULT).default()
 
-'''
-default['dir_rec_files'] = 'record_files'
-default['tpl_file'] = 'templates/smeta_tpl.docx'
-default['pablic_gd_url_db_file'] = 'https://docs.google.com/spreadsheets/d/1KlRFMJgW-Dm53Qbjh9Dv6W067BhVeyVv/edit?usp=drivesdk&ouid=101603067907582645147&rtpof=true&sd=true'
-default['db_file_sheet_contractor'] = "Contractor"
-default['db_file_sheet_rab'] = "Jobs names"
-default['db_file_sheet_mat'] = "Insulation materials"
-default['db_file_sheet_about'] = "About"
-default['sg_theme_style'] = 'Dark'
-default['max_len_line'] = 34
-default['ps_default'] = 'Аванс - 50%\nГарантия на работы - 1 год\nСрок выполнения - по-согласованию Сторон\nПодпись  ____________________'
-default['distance_default'] = 10
-default['delivery_default'] = 3
-default['zp_default'] = 3500
-default['kzp_default'] = 1.78
-default['df_default'] = 1225
-default['kdf_default'] = 1.5
-default['sut_default']= 550
-default['ksut_default'] = 2.11
-default['proezd_default'] = 10
-default['kproezd_default'] = 1.4
-default['arenda_default'] = 51
-default['karenda_default'] = 1.4
-default['cargo_default'] = 100
-default['kcargo_default'] = 1.2
-default['prochie_default'] = 5
-default['kprochie_default'] = 1.4
-default['itr_default'] = 0
-default['kitr_default'] = 1.5
-default['proiz_default'] = 3
-default['exit_yes_1'] = 'Уверены,\nчто хотите выйти\nиз программы?'
-default['exit_yes_2'] = 'Сохранили\nвведенные данные?'
-default['vsego_st_smeta_error'] = "\nСорян, чувак,\nНе определен ни один раздел!!!\n"
-default['export_txt_ok'] = "\nЭкспорт сметы в ТХТ-формат\nуспешно завершен!\n"
-default['export_txt_error'] = "\nЭкспорт сметы в ТХТ-формат!\n\nНЕУДАЧНО!\n\n Нажмите сначала •Расчитать смету•,\n Затем попробуйте снова\n"
-default['export_docx_ok'] = "\nЭкспорт сметы в DOCX-формат\nуспешно завершен!\n"
-default['export_docx_error'] = "\nЭкспорт сметы в DOCX-формат!\n\nНЕУДАЧНО!\n\n Нажмите сначала •Расчитать смету•,\n Затем попробуйте снова\n"
-default['db_update_ok'] = "\nОбновление базы\nуспешно загружено\nс удаленного сервера!\nДля начала работы\nтребуется перезапуск\nпрограммы.\n"
-default['db_update_error'] = "\nСорян, чувак!\nЧто-то пошло не так!\n\nИли интернета нет,\n или удаленная база\nне найдена!!!\n"
-'''
-
 sg.theme(default['sg_theme_style'])
 cnfg_1 = dict(font='Courier 12', size=(15, 2), text_color='yellow')
 cnfg_2 = dict(font='Courier 12', size=(15, 2), text_color='grey')
