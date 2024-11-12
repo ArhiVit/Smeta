@@ -1,13 +1,9 @@
-# проба git
-# проба git windows
-# проба git debian
-
 import PySimpleGUI as sg
 import functions_and_classes as fc
 import pathlib
 import pickle
 import docxtpl
-import copy #####
+import copy
 
 
 DB_FILE = 'prices/DB.xls'
@@ -124,7 +120,7 @@ def chapter_layout(num):
     return chapter_layout
 
 
-chapters = [sg.Tab(f'Раздел {i}\n', chapter_layout(i), visible=True, ) for i in range(1, 6)]
+chapters = [sg.Tab(f'Раздел {i}\n', chapter_layout(i), visible=True, ) for i in range(1, int(default['count_chapter']) + 1)]
 
 chapters_layout = [[sg.TabGroup(
     [chapters],
@@ -184,7 +180,7 @@ while True:
 
     smf_file_data = copy.deepcopy(values) #####
 
-    for num in range(1, 6):
+    for num in range(1, int(default['count_chapter']) + 1):
        smf_file_data[f'-MAT{num}-'] = window[f'-MAT{num}-'].get_indexes()
 
     if event == sg.WIN_CLOSE_ATTEMPTED_EVENT or event == 'Exit' or event == 'Выход':
